@@ -52,6 +52,14 @@ function countOnTiles() {
   return count;
 }
 
+tilesEl.forEach(tile => {
+  tile.addEventListener("click", () => {
+    cursor = tile;
+    render();
+  });
+});
+
+
 function getNeighbors(tile) {
   const cls = [...tile.classList].find((c) => /^r\d+c\d+$/.test(c));
   const [r, c] = cls.match(/\d+/g).map(Number);
