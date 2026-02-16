@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Rice – Login</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>🍚 Rice Login</h2>
+
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Success Popup -->
+  <div id="successPopup" class="popup hidden">
+    <div class="popup-card">
+      <h3>Login successful 🎉</h3>
+
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        id="slider"
+        oninput="slideCheck(this)"
+      >
+
+      <p class="slide-hint">Slide all the way 👉</p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

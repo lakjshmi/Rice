@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Rice – Game 3</title>
+    <link rel="stylesheet" href="css/page3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2>Birdy needs to go to Somasandrapalya</h2>
+    <p class="hint">Birdy saves energy 2 bulbs a time</p>
+
+    <div class="path-grid" id="path">
+      <!-- Row 1 -->
+      <div class="tile r1c2" data-id="0"></div>
+
+      <!-- Row 2 -->
+      <div class="tile r2c2" data-id="1"></div>
+      <div class="tile r2c3" data-id="2"></div>
+
+      <!-- Row 3 -->
+      <div class="tile r3c2" data-id="3"></div>
+      <div class="tile r3c5" data-id="4"></div>
+      <div class="tile r3c6" data-id="5"></div>
+      <div class="tile r3c7" data-id="6"></div>
+      <div class="tile r3c8" data-id="7"></div>
+
+      <!-- Row 4 -->
+      <div class="tile start r4c1" data-id="8"></div>
+      <div class="tile r4c2" data-id="9"></div>
+      <div class="tile r4c3" data-id="10"></div>
+      <div class="tile r4c4" data-id="11"></div>
+      <div class="tile r4c5" data-id="12"></div>
+
+      <!-- Row 5 -->
+      <div class="tile r5c2" data-id="13"></div>
+      <div class="tile r5c4" data-id="14"></div>
+      <div class="tile r5c5" data-id="15"></div>
+      <div class="tile r5c8" data-id="16"></div>
+
+      <!-- Row 6 -->
+      <div class="tile r6c2" data-id="17"></div>
+      <div class="tile r6c4" data-id="18"></div>
+      <div class="tile r6c5" data-id="19"></div>
+      <div class="tile r6c6" data-id="20"></div>
+      <div class="tile r6c7" data-id="21"></div>
+      <div class="tile r6c9" data-id="22"></div>
+
+      <!-- Row 7 -->
+      <div class="tile r7c2" data-id="23"></div>
+      <div class="tile r7c3" data-id="24"></div>
+      <div class="tile r7c4" data-id="25"></div>
+      <div class="tile r7c6" data-id="26"></div>
+      <div class="tile r7c7" data-id="27"></div>
+      <div class="tile r7c8" data-id="28"></div>
+      <div class="tile r7c10" data-id="29"></div>
+      <div class="tile end r7c11" data-id="30"></div>
+
+      <!-- Row 8 -->
+      <div class="tile r8c8" data-id="31"></div>
+      <div class="tile r8c9" data-id="32"></div>
+      <div class="tile r8c10" data-id="36"></div>
+
+      <!-- Row 9 -->
+      <div class="tile r9c8" data-id="33"></div>
+
+      <div class="tile r9c10" data-id="35"></div>
+    </div>
+
+    <!-- LEVER -->
+    <div class="lever-container">
+      <button id="lever">OFF</button>
+    </div>
+
+    <!-- MODAL -->
+    <div id="overlay" class="hidden">
+      <div class="modal">
+        <h3 id="modalTitle"></h3>
+        <p id="modalMessage"></p>
+        <button onclick="hideModal()">OK</button>
+      </div>
+    </div>
+
+    <script src="js/page3.js"></script>
+  </body>
+</html>

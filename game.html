@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Rice – Game</title>
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body>
+    <div class="score-box">
+      <span class="score-label">Hits</span>
+      <span id="score">0</span>
+      <span class="score-total">/6</span>
+    </div>
+
+    <div class="grid holes">
+      <div class="hole" data-id="1"></div>
+      <div></div>
+      <div class="hole" data-id="2"></div>
+
+      <div></div>
+      <div class="hole" data-id="3"></div>
+      <div></div>
+
+      <div class="hole" data-id="4"></div>
+      <div></div>
+      <div class="hole" data-id="5"></div>
+    </div>
+
+    <div class="grid buttons">
+      <button onclick="hit(1)" data-label="1"></button>
+      <div></div>
+      <button onclick="hit(2)" data-label="2"></button>
+
+      <div></div>
+      <button onclick="hit(3)" data-label="3"></button>
+      <div></div>
+
+      <button onclick="hit(4)" data-label="4"></button>
+      <div></div>
+      <button onclick="hit(5)" data-label="5"></button>
+    </div>
+
+    <div id="overlay" class="hidden">
+      <div class="modal">
+        <h2 id="modalTitle"></h2>
+        <p id="modalMessage"></p>
+
+        <div class="modal-actions">
+          <button id="primaryBtn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-container">
+      <div class="slider-label" id="nextGameLabel">Slide to Next Game</div>
+
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        id="nextGameSlider"
+        class="fat-slider"
+      />
+    </div>
+    <div class="top-bar">
+      <button id="pauseBtn">⏸ Pause</button>
+      <audio id="buttonSound" src="sounds/button.mp3"></audio>
+    </div>
+    <script src="js/game.js"></script>
+  </body>
+</html>
