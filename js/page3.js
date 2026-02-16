@@ -1,6 +1,6 @@
 /* ---------------- AUTH ---------------- */
-if (!localStorage.getItem("user")) {
-  window.location.href = "index.html";
+if (localStorage.getItem("auth") !== "true") {
+  window.location.href = "game.html";
 }
 
 /* ---------------- ELEMENTS ---------------- */
