@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -32,12 +33,11 @@ body {
   z-index: 2;
 }
 
-
 /* =====================
    ARCH TEXT
    ===================== */
 .arch-inner {
-  position: relative;              /* 🔑 REQUIRED */
+  position: relative; /* 🔑 REQUIRED */
   width: 100%;
   height: 100%;
   display: flex;
@@ -46,9 +46,6 @@ body {
   transform: translateY(-500px) rotate(8deg);
   transform-origin: center 700px;
 }
-
-
-
 
 .arch {
   width: 100%;
@@ -59,12 +56,11 @@ body {
   letter-spacing: -6px;
 }
 
-
 .arch span {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform-origin: 50% 500px;   /* proper circular radius */
+  transform-origin: 50% 500px; /* proper circular radius */
   font-size: 100px;
   font-weight: 400;
 }
@@ -76,22 +72,51 @@ body {
 
 /* Arch positioning */
 
-.arch span:nth-child(1)  { transform: rotate(-80deg); }
-.arch span:nth-child(2)  { transform: rotate(-68.6deg); }
-.arch span:nth-child(3)  { transform: rotate(-57.1deg); }
-.arch span:nth-child(4)  { transform: rotate(-45.7deg); }
-.arch span:nth-child(5)  { transform: rotate(-34.3deg); }
-.arch span:nth-child(6)  { transform: rotate(-22.9deg); }
-.arch span:nth-child(7)  { transform: rotate(-11.4deg); }
-.arch span:nth-child(8)  { transform: rotate(0deg); }
-.arch span:nth-child(9)  { transform: rotate(11.4deg); }
-.arch span:nth-child(10) { transform: rotate(22.9deg); }
-.arch span:nth-child(11) { transform: rotate(34.3deg); }
-.arch span:nth-child(12) { transform: rotate(45.7deg); }
-.arch span:nth-child(13) { transform: rotate(57.1deg); }
-.arch span:nth-child(14) { transform: rotate(68.6deg); }
-.arch span:nth-child(15) { transform: rotate(80deg); }
-
+.arch span:nth-child(1) {
+  transform: rotate(-80deg);
+}
+.arch span:nth-child(2) {
+  transform: rotate(-68.6deg);
+}
+.arch span:nth-child(3) {
+  transform: rotate(-57.1deg);
+}
+.arch span:nth-child(4) {
+  transform: rotate(-45.7deg);
+}
+.arch span:nth-child(5) {
+  transform: rotate(-34.3deg);
+}
+.arch span:nth-child(6) {
+  transform: rotate(-22.9deg);
+}
+.arch span:nth-child(7) {
+  transform: rotate(-11.4deg);
+}
+.arch span:nth-child(8) {
+  transform: rotate(0deg);
+}
+.arch span:nth-child(9) {
+  transform: rotate(11.4deg);
+}
+.arch span:nth-child(10) {
+  transform: rotate(22.9deg);
+}
+.arch span:nth-child(11) {
+  transform: rotate(34.3deg);
+}
+.arch span:nth-child(12) {
+  transform: rotate(45.7deg);
+}
+.arch span:nth-child(13) {
+  transform: rotate(57.1deg);
+}
+.arch span:nth-child(14) {
+  transform: rotate(68.6deg);
+}
+.arch span:nth-child(15) {
+  transform: rotate(80deg);
+}
 
 /* =====================
    NAME
@@ -147,16 +172,38 @@ body {
 }
 
 /* Balloon body colors */
-.b1 { background: #ff6f91; animation-delay: 0s; }
-.b2 { background: #ffc75f; animation-delay: 3s; }
-.b3 { background: #845ec2; animation-delay: 6s; }
-.b4 { background: #4d96ff; animation-delay: 1.5s; }
-.b5 { background: #00c9a7; animation-delay: 4.5s; }
-.b6 { background: #f9f871; animation-delay: 7.5s; }
+.b1 {
+  background: #ff6f91;
+  animation-delay: 0s;
+}
+.b2 {
+  background: #ffc75f;
+  animation-delay: 3s;
+}
+.b3 {
+  background: #845ec2;
+  animation-delay: 6s;
+}
+.b4 {
+  background: #4d96ff;
+  animation-delay: 1.5s;
+}
+.b5 {
+  background: #00c9a7;
+  animation-delay: 4.5s;
+}
+.b6 {
+  background: #f9f871;
+  animation-delay: 7.5s;
+}
 
 /* Left / Right */
-.left  { left: 8%; }
-.right { right: 8%; }
+.left {
+  left: 8%;
+}
+.right {
+  right: 8%;
+}
 
 /* 🎈 Curvy string */
 .string {
@@ -171,7 +218,7 @@ body {
 
 .string path {
   fill: none;
-  stroke: rgba(255,255,255,0.6);
+  stroke: rgba(255, 255, 255, 0.6);
   stroke-width: 2;
 }
 
@@ -224,8 +271,12 @@ body {
 }
 
 /* Shapes */
-.confetti.square { border-radius: 2px; }
-.confetti.round { border-radius: 50%; }
+.confetti.square {
+  border-radius: 2px;
+}
+.confetti.round {
+  border-radius: 50%;
+}
 
 /* Motion */
 @keyframes confettiFall {
@@ -236,5 +287,59 @@ body {
   100% {
     transform: translateX(var(--drift)) translateY(120vh) rotate(var(--spin));
     opacity: 0;
+  }
+}
+
+/* =====================
+   MOBILE ONLY
+   ===================== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 16px;
+    max-width: 100%;
+  }
+
+  .arch {
+    height: 30vh;
+  }
+
+  .arch-inner {
+    transform: translateY(-260px) rotate(8deg);
+    transform-origin: center 420px;
+  }
+
+  .arch span {
+    font-size: 42px;
+    transform-origin: 50% 260px;
+  }
+
+  .name {
+    font-size: 34px;
+    margin-top: -10px;
+  }
+
+  .message {
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  /* Balloons smaller on mobile */
+
+  .balloon {
+    width: 36px;
+    height: 48px;
+  }
+
+  .string {
+    position: absolute;
+    top: 100%; /* always start at bottom of balloon */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 60px;
+    animation: stringWave 2.5s ease-in-out infinite;
   }
 }
