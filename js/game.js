@@ -30,9 +30,7 @@ if (localStorage.getItem("auth") !== "true") {
   window.location.href = "index.html";
 }
 
-if (!localStorage.getItem("user")) {
-  window.location.href = "index.html";
-}
+
 
 
 function playBummerSound() {
