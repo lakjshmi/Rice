@@ -301,12 +301,15 @@ body {
   }
 
   .arch {
-    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
   }
 
   .arch-inner {
-    transform: translateY(-260px) rotate(8deg);
-    transform-origin: center 420px;
+    transform: translateY(-52vw) rotate(8deg);
+    transform-origin: center 75vw;
   }
 
   .arch span {
