@@ -293,7 +293,7 @@ body {
 /* =====================
    MOBILE ONLY
    ===================== */
-
+/* 
 @media (max-width: 768px) {
   .arch span {
     font-size: 100px;
@@ -304,4 +304,4 @@ body {
     transform: scale(0.45);
     transform-origin: center bottom;
   }
-}
+} */
