@@ -308,7 +308,10 @@ body {
   }
 
   .arch-inner {
-    transform: translateX(-50%) translateY(-52vw) rotate(8deg);
+    position: relative;
+    overflow: visible;
+    left: 50%;
+    transform: rotate(8deg) translateX(-50%) translateY(-52vw);
     transform-origin: center 75vw;
   }
 
