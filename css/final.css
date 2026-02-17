@@ -293,15 +293,53 @@ body {
 /* =====================
    MOBILE ONLY
    ===================== */
-/* 
-@media (max-width: 768px) {
-  .arch span {
-    font-size: 100px;
-    transform-origin: 50% 500px;
+/* =====================
+   MOBILE FIX — CLEAN
+   ===================== */
+
+@media (max-width: 650px) {
+  /* 1. Fix the Container */
+  .container {
+    padding: 20px 10px;
+    width: 100%;
+    overflow: hidden; /* Prevents the arch from causing a horizontal scroll */
+  }
+
+  /* 2. Fix the Arch Positioning */
+  .arch-inner {
+    position: relative;
+    transform: translateY(-280px) rotate(8deg); /* Reduced translation for smaller screens */
+    transform-origin: center 400px;
+    width: 100%;
   }
 
   .arch {
-    transform: scale(0.45);
-    transform-origin: center bottom;
+    height: 35vh; /* Slightly shorter for mobile */
+    letter-spacing: -4px; /* Less aggressive spacing for smaller font */
   }
-} */
+
+  .arch span {
+    font-size: 50px; /* Scaled down from 100px so it fits the width */
+    transform-origin: 50% 300px; /* Matches the tighter curve needed for mobile */
+    left: 50%;
+    /* Use this to ensure the letter itself is centered on its rotation axis */
+    margin-left: +25px;
+  }
+
+  /* 3. Fix the Name (Removing the min-width trap) */
+  .name {
+    margin-top: -20px;
+    font-size: 40px; /* Scaled down */
+    min-width: 0; /* Resetting this allows it to be truly centered */
+    width: 100%;
+  }
+
+  /* 4. Fix the Message */
+  .message {
+    margin-top: 20px;
+    font-size: 20px; /* More readable on phones */
+    max-width: 90%; /* Let it take up most of the screen width */
+    min-width: 0; /* Resetting the 500px trap */
+    line-height: 1.4;
+  }
+}
