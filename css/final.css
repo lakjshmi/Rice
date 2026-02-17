@@ -295,8 +295,13 @@ body {
    ===================== */
 
 @media (max-width: 768px) {
-  .arch-inner {
-    transform: translateY(-500px) rotate(8deg) scale(0.45);
-    transform-origin: center 700px;
+  .arch span {
+    font-size: 100px;
+    transform-origin: 50% 500px;
+  }
+
+  .arch {
+    transform: scale(0.45);
+    transform-origin: center bottom;
   }
 }
