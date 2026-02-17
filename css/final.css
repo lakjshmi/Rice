@@ -312,14 +312,18 @@ body {
   .arch-inner {
     position: relative;
     overflow: visible;
-    left: 50%;
+
     transform: rotate(8deg) translateX(-50%) translateY(-52vw);
     transform-origin: center 75vw;
   }
 
   .arch span {
-    font-size: 42px;
-    transform-origin: 50% 260px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform-origin: 50% 500px;
   }
 
   .name {
