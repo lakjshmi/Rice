@@ -295,63 +295,8 @@ body {
    ===================== */
 
 @media (max-width: 768px) {
-  .container {
-    padding: 20px 16px;
-    max-width: 100%;
-  }
-
-  .arch {
-    width: 120%; /* give extra space */
-    margin-left: -10%; /* re-center */
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
   .arch-inner {
-    position: relative;
-    overflow: visible;
-
-    transform: rotate(8deg) translateX(-50%) translateY(-52vw);
-    transform-origin: center 75vw;
-  }
-
-  .arch span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform-origin: 50% 500px;
-  }
-
-  .name {
-    font-size: 34px;
-    margin-top: -10px;
-  }
-
-  .message {
-    font-size: 18px;
-    margin-top: 16px;
-    line-height: 1.5;
-    padding: 0 10px;
-  }
-
-  /* Balloons smaller on mobile */
-
-  .balloon {
-    width: 36px;
-    height: 48px;
-  }
-
-  .string {
-    position: absolute;
-    top: 100%; /* always start at bottom of balloon */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 60px;
-    animation: stringWave 2.5s ease-in-out infinite;
+    transform: translateY(-500px) rotate(8deg) scale(0.45);
+    transform-origin: center 700px;
   }
 }
