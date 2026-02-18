@@ -345,7 +345,7 @@ body {
     line-height: 1.4;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 412px) {
   .container {
     padding: 20px 10px;
     width: 100%;
@@ -355,7 +355,7 @@ body {
   /* 2. Fix the Arch Positioning */
   .arch-inner {
     position: relative;
-    transform: translateY(-280px) rotate(8deg); /* Reduced translation for smaller screens */
+    transform: translateY(-280px) rotate(6deg); /* Reduced translation for smaller screens */
     transform-origin: center 400px;
     width: 100%;
   }
@@ -363,21 +363,22 @@ body {
   .arch {
     margin-top: 200px;
     height: 32vh; /* Slightly shorter for mobile */
-    letter-spacing: -4px; /* Less aggressive spacing for smaller font */
+   /* Less aggressive spacing for smaller font */
   }
 
   .arch span {
     font-size: 45px; /* Scaled down from 100px so it fits the width */
-    transform-origin: 30% 200px; /* Matches the tighter curve needed for mobile */
+    transform-origin: 10% 200px; /* Matches the tighter curve needed for mobile */
     left: 50%;
     /* Use this to ensure the letter itself is centered on its rotation axis */
-    margin-left: -12px;
+    margin-left: -9px;
+    margin-bottom: 50px;
     
   }
 
   /* 3. Fix the Name (Removing the min-width trap) */
   .name {
-    margin-top: -20px;
+    margin-top: -200px;
     font-size: 40px; /* Scaled down */
     min-width: 0; /* Resetting this allows it to be truly centered */
     width: 100%;
